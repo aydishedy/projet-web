@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Inscription</title>
+    <link rel="stylesheet" href="inscription.css">
+    <script src="inscription.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="barre">
+            <a class="logo" href="index.html">🎮 Game Store</a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a class="active" href="inscription.html">Inscription</a>
+                <a href="produits.html">Produits et commandes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Créer votre compte</h1>
+        <p class="description">Remplissez les informations ci-dessous pour vous inscrire.</p>
+
+        <form id="form-inscription">
+            <fieldset>
+                <legend>Vos informations</legend>
+
+                <div class="groupe">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="groupe">
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="groupe">
+                    <label for="email">Adresse email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="groupe">
+                    <label for="telephone">Téléphone *</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="8 chiffres" pattern="[0-9]{8}" required>
+                </div>
+
+                <div class="groupe">
+                    <label for="motdepasse">Mot de passe *</label>
+                    <input type="password" id="motdepasse" name="motdepasse" minlength="8" required>
+                </div>
+
+                <div class="groupe">
+                    <label for="confirmation">Confirmer le mot de passe *</label>
+                    <input type="password" id="confirmation" name="confirmation" minlength="8" required>
+                </div>
+
+                <div class="conditions">
+                    <input type="checkbox" id="conditions" required>
+                    <label for="conditions">J'accepte les conditions d'utilisation.</label>
+                </div>
+
+                <button type="submit">Créer mon compte</button>
+                <p id="message" class="message"></p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Game Store - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

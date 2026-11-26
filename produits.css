@@ -1,0 +1,278 @@
+
+/* ===== STYLE GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101522;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #080d18;
+    padding: 18px 5%;
+    border-bottom: 2px solid #00bfff;
+}
+
+.barre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #00bfff;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00bfff;
+}
+
+/* ===== CONTENU PRINCIPAL ===== */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+main > h1 {
+    text-align: center;
+    color: #00bfff;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+main > p {
+    text-align: center;
+    color: #c5cbd8;
+    margin-bottom: 35px;
+}
+
+/* ===== PRODUITS ===== */
+.produits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.produit {
+    background: #1b2435;
+    border: 1px solid #303d53;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.produit:hover {
+    transform: translateY(-7px);
+    border-color: #00bfff;
+    box-shadow: 0 5px 20px rgba(0, 191, 255, 0.2);
+}
+
+/* Images des produits */
+.image-produit {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.produit h2 {
+    color: #00bfff;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.produit p {
+    color: #d0d6e0;
+    margin-bottom: 10px;
+}
+
+.produit .prix {
+    color: #00ff99;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.produit label {
+    display: block;
+    margin-top: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.quantite {
+    width: 90px;
+    padding: 9px;
+    margin: 8px 0;
+    text-align: center;
+    border: 1px solid #00bfff;
+    border-radius: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.produit .total-produit {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+/* ===== COMMANDES ===== */
+.commandes {
+    background: #1b2435;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #303d53;
+    margin-bottom: 40px;
+}
+
+.commandes h2 {
+    text-align: center;
+    color: #00bfff;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+/* Tableau */
+.tableau {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    min-width: 500px;
+}
+
+thead {
+    background: #0077a8;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #39465c;
+}
+
+tbody tr {
+    background: #253148;
+}
+
+tbody tr:hover {
+    background: #303e58;
+}
+
+/* Totaux */
+.commandes > p {
+    text-align: right;
+    margin: 12px 0;
+    color: #d0d6e0;
+    font-size: 17px;
+}
+
+.commandes h3 {
+    text-align: right;
+    color: #00ff99;
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+/* Bouton */
+#valider {
+    display: block;
+    margin: 25px auto 0;
+    padding: 14px 30px;
+    background: #00bfff;
+    color: #080d18;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#valider:hover {
+    background: #00ff99;
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #080d18;
+    text-align: center;
+    padding: 20px;
+    color: #aab4c5;
+    border-top: 2px solid #00bfff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 900px) {
+    .produits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .barre {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .produits {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    main > h1 {
+        font-size: 28px;
+    }
+
+    .commandes {
+        padding: 15px;
+    }
+
+    #valider {
+        width: 100%;
+    }
+}

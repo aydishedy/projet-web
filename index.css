@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fc;
+    color: #26344d;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b63;
+    padding: 18px 40px;
+}
+
+.barre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover, nav a.active {
+    color: #b9adf4;
+}
+
+.presentation {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #e5efff;
+}
+
+.petit-titre {
+    color: #725bb5;
+    font-weight: bold;
+}
+
+.presentation h1 {
+    color: #2866ad;
+    font-size: 44px;
+    margin: 10px 0;
+}
+
+.presentation h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.presentation p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.actions {
+    margin-top: 25px;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #3978c6;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.bouton:hover {
+    background-color: #285d9e;
+}
+
+.bouton-clair {
+    background-color: #806bc4;
+}
+
+.bouton-clair:hover {
+    background-color: #6753a8;
+}
+
+.avantages {
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.avantages h2 {
+    color: #2866ad;
+    margin-bottom: 25px;
+}
+
+.cartes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #dce3ef;
+}
+
+.icone {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.carte h3 {
+    color: #725bb5;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #243b63;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 700px) {
+    header, .barre {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .presentation h1 {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Produits et commandes</title>
+    <link rel="stylesheet" href="produits.css">
+    <script src="commande.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="barre">
+            <a class="logo" href="index.html">🎮 Game Store</a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="inscription.html">Inscription</a>
+                <a class="active" href="produits.html">Produits et commandes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Nos produits</h1>
+        <p>Choisissez la quantité de chaque produit pour préparer votre commande.</p>
+
+
+<section class="produits">
+
+      <article class="produit" data-prix="599">
+        <img src="ecran.avif" alt="ecran" class="image-produit">
+        <h2>Moniteur Gaming</h2>
+        <p>ecran 200Hz 27p Full HD</p>
+        <p class="prix">599 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <article class="produit" data-prix="699">
+        <img src="chaise.avif" alt="chaise" class="image-produit">
+        <h2>Chaise</h2>
+        <p>Chaise de Gaming</p>
+        <p class="prix">699 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+
+
+
+
+
+
+
+
+      <article class="produit" data-prix="1799">
+        <img src="play5.avif" alt="play5" class="image-produit">
+        <h2>Play5</h2>
+        <p>Console de jeux PlayStation5</p>
+        <p class="prix">1799 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+
+
+
+
+
+
+
+
+
+    
+     <article class="produit" data-prix="1699">
+        <img src="xbox.avif" alt="xbox" class="image-produit">
+        <h2>Xbox</h2>
+        <p>Console de jeux Xbox</p>
+        <p class="prix">1699 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+     <article class="produit" data-prix="320">
+        <img src="ram.webp" alt="ram" class="image-produit">
+        <h2>Ram</h2>
+        <p>Mémoire Ram ddr5 16Gb</p>
+        <p class="prix">320 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+
+    <article class="produit" data-prix="250">
+        <img src="manette.avif" alt="Manette PS5" class="image-produit">
+        <h2>Manette PS5</h2>
+        <p>Manette sans fil DualSense</p>
+        <p class="prix">250 DT</p>
+
+        <label for="qte1">Quantité</label>
+        <input type="number" id="qte1" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+    <article class="produit" data-prix="120">
+        <img src="casque.avif" alt="Casque Gaming" class="image-produit">
+        <h2>Casque Gaming</h2>
+        <p>Casque avec microphone</p>
+        <p class="prix">120 DT</p>
+
+        <label for="qte2">Quantité</label>
+        <input type="number" id="qte2" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+    <article class="produit" data-prix="95">
+        <img src="clavier.webp" alt="Clavier Gaming" class="image-produit">
+        <h2>Clavier Gaming</h2>
+        <p>Clavier mécanique RGB</p>
+        <p class="prix">95 DT</p>
+
+        <label for="qte3">Quantité</label>
+        <input type="number" id="qte3" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+    <article class="produit" data-prix="65">
+        <img src="souris.jpg" alt="Souris Gaming" class="image-produit">
+        <h2>Souris Gaming</h2>
+        <p>Souris optique RGB</p>
+        <p class="prix">65 DT</p>
+
+        <label for="qte4">Quantité</label>
+        <input type="number" id="qte4" class="quantite" min="0" max="99" value="0">
+
+        <p>Sous-total : <span class="total-produit">0 DT</span></p>
+    </article>
+
+</section>
+
+
+       
+        <section class="commandes">
+            <h2>Récapitulatif de votre commande</h2>
+
+            <div class="tableau">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Prix unitaire</th>
+                            <th>Quantité</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="liste-commande">
+                        <tr>
+                            <td colspan="4">Aucun produit choisi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Sous-total : <span id="sous-total">0 DT</span></p>
+            <p>Livraison : <span id="livraison">0 DT</span></p>
+            <h3>Total à payer : <span id="total">0 DT</span></h3>
+            <button id="valider">Confirmer la commande</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Game Store - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
